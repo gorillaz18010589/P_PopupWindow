@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/topLeft"
+            android:layout_marginLeft="16dp"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            />
+
+        <TextView
+            android:id="@+id/tvPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawablePadding="5dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="今日"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_toRightOf="@+id/tvPlay"
+            android:layout_toLeftOf="@+id/topRight"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="12dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="$10,000.00" />
+
+        <ImageView
+            android:id="@+id/topRight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/topNavigationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="#ffffff"
+        >
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnToday"
+            android:text="今日"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnBoules"
+            android:text="滾球"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnMorning"
+            android:text="早盤"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnCheckpoint"
+            android:text="串關"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
